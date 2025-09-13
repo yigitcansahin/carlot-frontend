@@ -1,0 +1,51 @@
+
+
+/* 1) Tüm öğelerde border-box ve boşlukları sıfırla */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+
+/* 2) Body: okunabilirlik ve satır uzunluğu */
+html:focus-within { scroll-behavior: smooth; }
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color:var(--bg-color);;
+  font-family: "Euclid Circular B";
+  color:var(--text-color);;
+}
+
+/* 3) Medya: taşmayı kırp, esnek davran */
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+
+/* 4) Formlar metin stili miras alsın */
+input, button, textarea, select { font: inherit; color: inherit; }
+
+/* 5) Link görsel gürültüsünü azalt */
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+
+/* 6) Listelerde default bullets’ı kapat (class verilmiş olanlarda) */
+ul[class], ol[class] { list-style: none; padding: 0; }
+
+/* 7) Tablo temel düzeltmeler */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 8) Kullanışlı default’lar */
+:root {
+    color-scheme: light dark; 
+    --text-color: #161616;
+    --bg-color: #eaeaea;
+}
+button { cursor: pointer; background: none; border: 0; }
+abbr[title] { text-decoration: underline dotted; }
+
+
+.container {max-width:1170px;margin:0 auto;}
+
+/* 9) Hareketi azalt tercihine saygı göster */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
