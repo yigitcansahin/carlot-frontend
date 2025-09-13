@@ -356,6 +356,12 @@
     color:#fff;
     margin-top:18px;
     gap:13px;
+    transition: 380ms;
+}
+
+.vehicle-card__whatsapp-btn:hover {
+    box-shadow: 0px 3px 20px lch(62 62.61 146.2 / 0.54); 
+    transition: 380ms;
 }
 
 .vehicle-card__whatsapp-text {
@@ -443,6 +449,12 @@
     font-size: 14px;
     color: #fff;
     padding:0 19px;
+    transition:380ms;
+}
+
+.filtered-vehicles__button:hover {
+    box-shadow: 0px 3px 20px rgba(194, 35, 41, 0.44); 
+    transition:380ms;
 }
 
 .filtered-vehicles__list {
