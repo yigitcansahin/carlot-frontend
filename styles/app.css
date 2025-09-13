@@ -364,6 +364,15 @@
     transition: 380ms;
 }
 
+.vehicle-card__whatsapp-btn svg {
+    transition:300ms;
+}
+
+.vehicle-card__whatsapp-btn:hover svg {
+    transform:rotate(360deg);
+    transition:300ms;
+}
+
 .vehicle-card__whatsapp-text {
     font-weight: 500;
     font-size: 14px;
