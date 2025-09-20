@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlot</title>
+    <title>Category - Carlot</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/app.css" />
     
@@ -11,7 +11,7 @@
 <body>
     
     <!-- site-header / home -->
-    <header class="site-header home">
+    <header class="site-header category">
         <div class="container">
             <div class="site-header__wrapper">
 
@@ -66,56 +66,12 @@
     <!-- main -->
     <main class="main">
 
-        <!-- hero-slider -->
-        <section class="hero-slider">
-            <div class="container">
-                <div class="swiper hero-slider__wrapper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide hero-slider__item">
-                            <h1 class="hero-slider__item-title">Hayalinizdeki araca ulaşmanın en <span class="hero-slider__item-title__highlight">kolay</span> adresi</h1>
-                            <div class="hero-slider__item-image">
-                                <img src="assets/images/hero-slider__item-image.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="swiper-slide hero-slider__item">
-                            <h1 class="hero-slider__item-title">Hayalinizdeki araca ulaşmanın en <span class="hero-slider__item-title__highlight">ucuz</span> adresi</h1>
-                            <div class="hero-slider__item-image">
-                                <img src="assets/images/hero-slider__item-image.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="swiper-slide hero-slider__item">
-                            <h1 class="hero-slider__item-title">Hayalinizdeki araca ulaşmanın en <span class="hero-slider__item-title__highlight">kaliteli</span> adresi</h1>
-                            <div class="hero-slider__item-image">
-                                <img src="assets/images/hero-slider__item-image.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-slider__actions">
-                    <div class="hero-slider__prev-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32.669" height="11" viewBox="0 0 32.669 11">
-                            <g transform="translate(0)">
-                                <rect width="32" height="1" transform="translate(0.669 5.02)" fill="#fff"/>
-                                <path d="M16.507,18a.611.611,0,0,0,.435-1.045L12.473,12.5l4.468-4.454a.614.614,0,0,0-.869-.868l-4.9,4.888a.61.61,0,0,0,0,.868l4.9,4.888A.613.613,0,0,0,16.507,18Z" transform="translate(-10.994 -6.996)" fill="#fff"/>
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="hero-slider__pagination"></div>
-                    <div class="hero-slider__next-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32.669" height="11" viewBox="0 0 32.669 11">
-                            <g transform="translate(15.547 -6.996)">
-                                <rect width="32" height="1" transform="translate(-15.547 12.016)" fill="#fff"/>
-                                <path d="M11.61,18a.611.611,0,0,1-.435-1.045L15.643,12.5,11.175,8.043a.614.614,0,0,1,.869-.868l4.9,4.888a.61.61,0,0,1,0,.868l-4.9,4.888A.613.613,0,0,1,11.61,18Z" fill="#fff"/>
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- vehicle-filters -->
         <section class="vehicle-filters">
             <div class="container">
+                <div class="vehicle-filters__heading">
+                    <h1>Plakalı Araçlar</h1>
+                </div>
                 <form class="vehicle-filters__form">
                     <div class="filter-form__item">
                         <label for="vehicle-type" class="filter-form__label">Araç Tipi</label>
@@ -172,11 +128,6 @@
         <section class="featured-vehicles">
             <div class="container">
                 <div class="featured-vehicles__wrapper">
-
-                    <!-- section-heading -->
-                    <div class="featured-vehicles__heading">
-                        <h2 class="featured-vehicles__title">Öne Çıkan Araçlar</h2>
-                    </div>
 
                     <!-- featured-vehicles--list -->
                     <div class="featured-vehicles__list">
@@ -368,165 +319,43 @@
                     </div>
                     <!-- /vehicle list -->
 
-                </div>
-            </div>
-        </section>
-
-        <!-- filtered-vehicles -->
-        <section class="filtered-vehicles">
-            <div class="container">
-                <div class="filtered-vehicles__wrapper">
-
-                    <!-- filtered-vehicles__heading -->
-                    <div class="filtered-vehicles__heading">
-                        <h3 class="filtered-vehicles__title">Fiyata Göre Araçlar</h3>
-                        <span class="filtered-vehicles__line"></span>
-                        <div class="filtered-vehicles__filters">
-                            <div class="filtered-vehicles__filter">
-                                <label for="min-price" class="filtered-vehicles__filter-label">En Düşük Fiyat</label>
-                                <select id="min-price" class="filtered-vehicles__select">
-                                    <option value="10000">10.000 £</option>
-                                    <option value="15000">15.000 £</option>
-                                </select>
-                            </div>
-                            <div class="filtered-vehicles__filter">
-                                <label for="max-price" class="filtered-vehicles__filter-label">En Yüksek Fiyat</label>
-                                <select id="max-price" class="filtered-vehicles__select">
-                                    <option value="20000">20.000 £</option>
-                                    <option value="25000">25.000 £</option>
-                                </select>
-                            </div>
-                            <button class="filtered-vehicles__button">Filtrele</button>                            
-                        </div>
-                    </div>
-
-                    <!-- filtered-vehicles__list -->
-                    <div class="filtered-vehicles__list">
-
-                        <!-- filtered-vehicles__slider -->
-                        <div class="filtered-vehicles__slider swiper">
-                            <div class="swiper-wrapper">
-
-                                <!-- filtered-vehicles__card -->
-                                <div class="filtered-vehicles__card swiper-slide">
-                                    <a href="#" class="filtered-vehicles__card-image">
-                                        <img src="assets/images/filtered-vehicles__card-image.png" alt="Mercedes - Benz ML">
-                                    </a>  
-                                    <span class="filtered-vehicles__card-title">Mercedes - Benz ML</span>                    
-                                    <ul class="filtered-vehicles__card-features">
-                                        <li>2022</li>
-                                        <li>Mavi - Açık</li>
-                                    </ul>
-                                </div>
-
-                                <!-- filtered-vehicles__card -->
-                                <div class="filtered-vehicles__card swiper-slide">
-                                    <a href="#" class="filtered-vehicles__card-image">
-                                        <img src="assets/images/filtered-vehicles__card-image.png" alt="Mercedes - Benz ML">
-                                    </a>  
-                                    <span class="filtered-vehicles__card-title">Mercedes - Benz ML</span>                    
-                                    <ul class="filtered-vehicles__card-features">
-                                        <li>2022</li>
-                                        <li>Mavi - Açık</li>
-                                    </ul>
-                                </div>
-
-                                <!-- filtered-vehicles__card -->
-                                <div class="filtered-vehicles__card swiper-slide">
-                                    <a href="#" class="filtered-vehicles__card-image">
-                                        <img src="assets/images/filtered-vehicles__card-image.png" alt="Mercedes - Benz ML">
-                                    </a>  
-                                    <span class="filtered-vehicles__card-title">Mercedes - Benz ML</span>                    
-                                    <ul class="filtered-vehicles__card-features">
-                                        <li>2022</li>
-                                        <li>Mavi - Açık</li>
-                                    </ul>
-                                </div>
-
-                                <!-- filtered-vehicles__card -->
-                                <div class="filtered-vehicles__card swiper-slide">
-                                    <a href="#" class="filtered-vehicles__card-image">
-                                        <img src="assets/images/filtered-vehicles__card-image.png" alt="Mercedes - Benz ML">
-                                    </a>  
-                                    <span class="filtered-vehicles__card-title">Mercedes - Benz ML</span>                    
-                                    <ul class="filtered-vehicles__card-features">
-                                        <li>2022</li>
-                                        <li>Mavi - Açık</li>
-                                    </ul>
-                                </div>
-
-                                <!-- filtered-vehicles__card -->
-                                <div class="filtered-vehicles__card swiper-slide">
-                                    <a href="#" class="filtered-vehicles__card-image">
-                                        <img src="assets/images/filtered-vehicles__card-image.png" alt="Mercedes - Benz ML">
-                                    </a>  
-                                    <span class="filtered-vehicles__card-title">Mercedes - Benz ML</span>                    
-                                    <ul class="filtered-vehicles__card-features">
-                                        <li>2022</li>
-                                        <li>Mavi - Açık</li>
-                                    </ul>
-                                </div>
-
-                                <!-- filtered-vehicles__card -->
-                                <div class="filtered-vehicles__card swiper-slide">
-                                    <a href="#" class="filtered-vehicles__card-image">
-                                        <img src="assets/images/filtered-vehicles__card-image.png" alt="Mercedes - Benz ML">
-                                    </a>  
-                                    <span class="filtered-vehicles__card-title">Mercedes - Benz ML</span>                    
-                                    <ul class="filtered-vehicles__card-features">
-                                        <li>2022</li>
-                                        <li>Mavi - Açık</li>
-                                    </ul>
-                                </div>
-
-                                <!-- filtered-vehicles__card -->
-                                <div class="filtered-vehicles__card swiper-slide">
-                                    <a href="#" class="filtered-vehicles__card-image">
-                                        <img src="assets/images/filtered-vehicles__card-image.png" alt="Mercedes - Benz ML">
-                                    </a>  
-                                    <span class="filtered-vehicles__card-title">Mercedes - Benz ML</span>                    
-                                    <ul class="filtered-vehicles__card-features">
-                                        <li>2022</li>
-                                        <li>Mavi - Açık</li>
-                                    </ul>
-                                </div>
-
-                                <!-- filtered-vehicles__card -->
-                                <div class="filtered-vehicles__card swiper-slide">
-                                    <a href="#" class="filtered-vehicles__card-image">
-                                        <img src="assets/images/filtered-vehicles__card-image.png" alt="Mercedes - Benz ML">
-                                    </a>  
-                                    <span class="filtered-vehicles__card-title">Mercedes - Benz ML</span>                    
-                                    <ul class="filtered-vehicles__card-features">
-                                        <li>2022</li>
-                                        <li>Mavi - Açık</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- filtered-vehicles__actions -->
-                        <div class="filtered-vehicles__actions">
-                            <div class="filtered-vehicles__prev-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32.669" height="11" viewBox="0 0 32.669 11">
-                                    <g transform="translate(0)">
-                                        <rect width="32" height="1" transform="translate(0.669 5.02)" fill="#fff"/>
-                                        <path d="M16.507,18a.611.611,0,0,0,.435-1.045L12.473,12.5l4.468-4.454a.614.614,0,0,0-.869-.868l-4.9,4.888a.61.61,0,0,0,0,.868l4.9,4.888A.613.613,0,0,0,16.507,18Z" transform="translate(-10.994 -6.996)" fill="#fff"/>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="filtered-vehicles__pagination"></div>
-                            <div class="filtered-vehicles__next-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32.669" height="11" viewBox="0 0 32.669 11">
-                                    <g transform="translate(15.547 -6.996)">
-                                        <rect width="32" height="1" transform="translate(-15.547 12.016)" fill="#fff"/>
-                                        <path d="M11.61,18a.611.611,0,0,1-.435-1.045L15.643,12.5,11.175,8.043a.614.614,0,0,1,.869-.868l4.9,4.888a.61.61,0,0,1,0,.868l-4.9,4.888A.613.613,0,0,1,11.61,18Z" fill="#fff"/>
-                                    </g>
-                                </svg>
-                            </div>
-                        </div>
-
+                    <!-- pagination -->
+                    <div class="pagination">
+                        <ul>
+                            <li class="pagination-page__button">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.091" height="11.182" viewBox="0 0 7.091 11.182">
+                                        <path d="M10.707,3.293a1,1,0,0,1,0,1.414L7.414,8l3.293,3.293a1,1,0,1,1-1.414,1.414l-4-4a1,1,0,0,1,0-1.414l4-4A1,1,0,0,1,10.707,3.293Z" transform="translate(-4.5 -2.409)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" fill-rule="evenodd"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                            <li><a href="#">11</a></li>
+                            <li><a href="#">12</a></li>
+                            <li><a href="#">13</a></li>
+                            <li><a href="#">14</a></li>
+                            <li><a href="#">15</a></li>
+                            <li class="pagination-page__dots">
+                                <span>...</span>
+                            </li>
+                            <li><a href="#">50</a></li>
+                            <li class="pagination-page__button">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.091" height="11.182" viewBox="0 0 7.091 11.182">
+                                        <path d="M5.293,3.293a1,1,0,0,0,0,1.414L8.586,8,5.293,11.293a1,1,0,1,0,1.414,1.414l4-4a1,1,0,0,0,0-1.414l-4-4A1,1,0,0,0,5.293,3.293Z" transform="translate(-4.409 -2.409)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" fill-rule="evenodd"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>

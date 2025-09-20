@@ -1,5 +1,5 @@
-@import '/styles/fonts.css';
-@import '/styles/base.css';
+@import '../styles/fonts.css';
+@import '../styles/base.css';
 
 
 /* site-header */
@@ -12,6 +12,15 @@
     content:"";
     width:100%;
     height: 610px;
+    background: linear-gradient(to right, #2f2f2f 0%, #161616 100%);
+    z-index:-1
+}
+
+.site-header.category::before {
+    position:absolute;
+    content:"";
+    width:100%;
+    height: 350px;
     background: linear-gradient(to right, #2f2f2f 0%, #161616 100%);
     z-index:-1
 }
@@ -194,9 +203,18 @@
     
 }
 
+.site-header.category + .main {
+    margin-top:99px;
+    margin-bottom:30px;
+}
+
 /* vehicle-filters */
 .vehicle-filters {
     margin-top:-12px;
+}
+
+.site-header.category + .main .vehicle-filters__form {
+    margin-top:28px;
 }
 
 .vehicle-filters__form {
@@ -254,9 +272,40 @@
     justify-content: center;
 }
 
+.vehicle-filters__heading {
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    position:relative;
+
+}
+
+.vehicle-filters__heading::before {
+    position:absolute;
+    content:"";
+    left:-30px;
+    top:0;
+    width:calc(100% + 60px);
+    height:178px;
+    border-radius: 50px 50px 0px 0px;
+    background: #c22429;
+    z-index:-1;
+}
+
+.vehicle-filters__heading>h1 {
+    font-weight:700;
+    font-size: 24px;
+    color: #fff;
+    margin-top:32px;
+}
+
 /* featured-vehicles */
 .featured-vehicles {
     margin-top:42px;
+}
+
+.site-header.category + .main .featured-vehicles {
+    margin-top:20px;
 }
 
 .featured-vehicles__wrapper {
@@ -656,6 +705,71 @@
     text-align:center;
     justify-content: center;
     display:flex;
+}
+
+/* Pagination */
+.pagination {
+    display:flex;
+    align-items:center;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+    margin-top:22px;
+    justify-content: center;
+    padding:14px;
+}
+
+.pagination ul {
+    list-style-type: none;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.pagination ul li:not(.pagination-page__button) a {
+    display:flex;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #273565;
+    height:30px;
+    align-items:center;
+    width:26px;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.pagination ul li:not(.pagination-page__button) a:hover {
+    background: #f7eded;
+    border: 1px solid #c22329;
+    color: #c22329;
+}
+
+.pagination ul li.pagination-page__button a {
+    display:flex;
+    height:30px;
+    width:26px;
+    background-color: #ACACAC;
+    border-radius: 6px;
+    align-items:center;
+    justify-content: center;
+    margin:0 8px;
+}
+
+.pagination ul li.pagination-page__button a:hover {
+    background-color: #C22329;
+}
+
+.pagination ul li.pagination-page__dots span {
+    display:flex;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #273565;
+    height:30px;
+    align-items:center;
+    width:26px;
+    justify-content: center;
 }
 
 /* Responsive */
